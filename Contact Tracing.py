@@ -4,22 +4,22 @@ print("~~~~~~~~~~BSCOE 2-2~~~~~~~~~~")
 #Python Program for Contact Tracing using Dictionary to store info
 alldict = {}
 while True:
-    print('\n\n Main Menu: \n\n'
-    '1. Add an item \n' 
-    '2. Search \n'
-    '3. Exit(y/n)\n')
-    option = input("What do you want to do? (1-3)")
+    print('\n\n***************Main Menu:***************\n\n'
+    '1.) Add an Item to the Program\n' 
+    '2.) Search from the Program\n'
+    '3.) Exit(y/n)\n')
+    option = input("What do you want to do? (Choice from 1-3): ")
 #for option 1
     if option == '1':
-        fullname = input("Add the Fullname: ")
-        age = input("Add the Age: ")
-        address = input("Add the Address: ")
-        phone = input("Add the Phone Number: ")
+        Fullname = input("Add a Full Name: ")
+        Age = input("Add the Age: ")
+        Address = input("Add the Address: ")
+        Phone = input("Add the Phone Number: ")
         item = {
-            fullname : {
-                'age': age,
-                'address' : address,
-                'phone' : phone,
+            Fullname : {
+                'Age': Age,
+                'Address' : Address,
+                'Phone' : Phone,
             }
         }
         alldict.update(item)
@@ -27,16 +27,16 @@ while True:
 
 #for option 2
     if option == '2':
-        fullname = input("Fullname")
-        if fullname in alldict:
-            print("Fullname", fullname )
-            print("age %s" % alldict[fullname]['age'])
-            print("address", alldict[fullname]['address'])
-            print("phone %s" % alldict[fullname]['phone'])
+        Fullname = input("Search the Fullname that you are looking for: ")
+        if Fullname in alldict:
+            print("Fullname :", Fullname )
+            print("Age : %s" % alldict[Fullname]['Age'])
+            print("Address :", alldict[Fullname]['Address'])
+            print("Phone : %s" % alldict[Fullname]['Phone'])
 
 #for option 3
     if option == '3':
-        exit = input("Exist? (y/n)")
+        exit = input("Exist? (y/n): ")
         if exit == 'y':
             print("Thank You for using this program!")
             break
