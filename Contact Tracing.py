@@ -8,4 +8,8 @@ while True:
     option = input("What do you want to do? (1-3)")
 #for option 1
     if option == '1':
-        fullname = input("Add the Fullname")
+        fullname = input("Add the Fullname: ")
+        age = input("Add the Age: ")
+        address = input("Add the Address: ")
+        phone = input("Add the Phone Number: ")
+
