@@ -4,7 +4,10 @@ print("~~~~~~~~~~BSCOE 2-2~~~~~~~~~~")
 #Python Program for Contact Tracing using Dictionary to store info
 alldict = {}
 while True:
-    print('Menu: 1. Add an item , 2. Search , 3. Exit(y/n)')
+    print('\n\n Main Menu: \n\n'
+    '1. Add an item \n' 
+    '2. Search \n'
+    '3. Exit(y/n)\n')
     option = input("What do you want to do? (1-3)")
 #for option 1
     if option == '1':
