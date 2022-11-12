@@ -28,7 +28,12 @@ while True:
         if fullname in alldict:
             print("Fullname", fullname )
             print("age %s" % alldict[fullname]['age'])
-            print("address", alldict[fullname]['Address'])
+            print("address", alldict[fullname]['address'])
             print("phone %s" % alldict[fullname]['phone'])
 
-
+#for option 3
+    if option == '3':
+        exit = input("Exist? (y/n)")
+        if exit == 'y':
+            print("Thank You for using this program!")
+            break
