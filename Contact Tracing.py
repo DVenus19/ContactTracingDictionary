@@ -22,5 +22,11 @@ while True:
         alldict.update(item)
         print("This contact has been saved,Thank You!!!")
 #for option 2
-#   if option '2':
+    if option == '2':
+        fullname = input("Fullname")
+        if fullname in alldict:
+            print("Fullname", fullname )
+            print("age %s" , alldict[fullname]['age'])
+            print("address", alldict[fullname]['Address'])
+
 
