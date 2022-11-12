@@ -21,5 +21,6 @@ while True:
         }
         alldict.update(item)
         print("This contact has been saved,Thank You!!!")
-
+#for option 2
+#   if option '2':
 
