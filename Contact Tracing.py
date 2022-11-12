@@ -12,4 +12,14 @@ while True:
         age = input("Add the Age: ")
         address = input("Add the Address: ")
         phone = input("Add the Phone Number: ")
+        item = {
+            fullname : {
+                'age': age,
+                'address' : address,
+                'phone' : phone,
+            }
+        }
+        alldict.update(item)
+        print("This contact has been saved,Thank You!!!")
+
 
